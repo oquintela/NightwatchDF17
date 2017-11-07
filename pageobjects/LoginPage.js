@@ -41,7 +41,6 @@ module.exports = {
         },
 
         sfdcLogin(instanceUrl,token) {
-            this.api.url(instanceUrl);
             this.api.url(instanceUrl+"/secur/frontdoor.jsp?sid=" + token);
       return this.api;
     },
