@@ -10,7 +10,7 @@ module.exports = {
   "globals_path": "Global.js",
   "output_folder": "./reports", // reports (test outcome) output by nightwatch
   "selenium": { // downloaded by selenium-download module (see readme)
-    "start_process": false, // tells nightwatch to start/stop the selenium process
+    "start_process": true, // tells nightwatch to start/stop the selenium process
      "server_path": BINPATH + "selenium.jar",
     "host": "127.0.0.1",
     "port": 4444, // standard selenium port
@@ -18,6 +18,7 @@ module.exports = {
         "webdriver.chrome.driver" : BINPATH + "chromedriver"
      }
    },
+   
 
    "test_workers" : {"enabled" : true, "workers" : "auto"}, // perform tests in parallel where possible
 
@@ -36,6 +37,8 @@ module.exports = {
                    "webdriver.chrome.driver" : BINPATH + "chromedriver.exe"
 
               }
-     }
+     },
+
+     
    }
  }
